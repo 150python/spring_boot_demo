@@ -6,12 +6,12 @@ server:
       max: 20
       min-spare: 10
     accept-count: 10
-
+#数据库
 spring:
   datasource:
     username: root
     password: 183100
-    url: jdbc:mysql://127.0.0.1:3306/s-pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+    url: jdbc:mysql://127.0.0.1:3306/springboot?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialSize: 5
     minIdle: 5
@@ -25,3 +25,14 @@ spring:
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat
+#mybatis
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+
+#日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+
+
