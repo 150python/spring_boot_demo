@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.AppointmentDao">
+<resultMap id="dataMap" type="com.example.demo.domain.po.Appointment">
+    <id column="id" property="id"/>
+    <result column="appointment_date" property="appointmentDate"/>
+    <result column="department" property="department"/>
+    <result column="phone" property="phone"/>
+</resultMap>
+    <insert id="insert" parameterType="com.example.demo.domain.po.Appointment">
+        insert into appointment_table(
+            appointment_date,
+            department,
+            phone
+        )
+        VALUES(
+               #{appointmentDate},
+               #{department},
+               #{phone}
+              )
+    </insert>
+
+    <select id="existsByPhone" resultType="boolean">
+        SELECT EXISTS(
+            select 1
+            from appointment_table
+            where phone = #{phone}
+        )
+    </select>
+</mapper>

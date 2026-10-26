@@ -6,8 +6,9 @@ server:
       max: 20
       min-spare: 10
     accept-count: 10
-#数据库
+
 spring:
+  #数据库配置
   datasource:
     username: root
     password: 183100
@@ -25,6 +26,14 @@ spring:
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat
+    # Redis配置
+  data:
+    redis:
+      host: 127.0.30.1
+      port: 6379
+      database: 0
+      timeout: 3000ms
+
 #mybatis
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.ScheduleDao">
+<resultMap id="dataMap" type="com.example.demo.domain.po.Schedule">
+    <id column="id" property="id"/>
+    <result column="appointment_date" property="appointmentDate"/>
+    <result column="department" property="department"/>
+    <result column="remain_number" property="remainNumber"/>
+</resultMap>
+    <insert id="insert" parameterType="com.example.demo.domain.po.Schedule">
+        insert into schedule_table(
+                appointment_date,
+                department,
+                remain_number
+        )
+        values(
+               #{appointmentDate},
+               #{department},
+               #{remainNumber}
+              )
+    </insert>
+    
+    <update id="decreaseRemainNumber">
+        update schedule_table
+        set remain_number = remain_number - 1
+        where appointment_date = #{appointmentDate}
+        and department = #{department}
+        and remain_number > 0
+    </update>
+
+    <update id="increaseRemainNumber">
+        update schedule_table
+        set remain_number = remain_number + 1
+        where appointment_date = #{appointmentDate}
+          and department = #{department}
+    </update>
+</mapper>
