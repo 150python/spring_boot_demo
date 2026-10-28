@@ -1,0 +1,7 @@
+26-10-14.15:17:36.746 [HikariPool-1:housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m25s896ms243µs).
+26-10-14.17:14:41.403 [HikariPool-1:housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m4s30ms285µs200ns).
+26-10-14.21:52:18.437 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-14.21:52:18.497 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-14.21:52:18.506 [SpringApplicationShutdownHook] INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26-10-14.21:52:18.516 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.21:52:18.519 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

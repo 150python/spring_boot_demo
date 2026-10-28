@@ -14,6 +14,6 @@ import java.time.LocalDate;
 public interface AppointmentDao {
     void insert(Appointment appointment);
     boolean existsByPhone(String phone);
-    int decreaseRemainNumber(LocalDate appointmentDate, String department);
-    int increaseRemainNumber(LocalDate appointmentDate, String department);
+    Appointment findByPhone(String phone);
+    int deleteByPhone(String phone);
 }

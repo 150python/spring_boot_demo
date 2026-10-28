@@ -14,5 +14,6 @@ import java.time.LocalDate;
 @Mapper
 public interface ScheduleDao {
     void inert(Schedule schedule);
-
+    int decreaseRemainNumber(LocalDate appointmentDate, String department);
+    int increaseRemainNumber(LocalDate appointmentDate, String department);
 }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>就诊预约系统</title>
+
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            width: 760px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f4e79;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin: 10px 0;
+        }
+
+        input, select {
+            width: 250px;
+            padding: 8px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #1677ff;
+            color: white;
+            border: none;
+            padding: 9px 22px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 14px;
+        }
+
+        button:hover {
+            background: #0958d9;
+        }
+
+        .message {
+            background: #e6f4ff;
+            color: #0958d9;
+            border: 1px solid #91caff;
+            border-radius: 4px;
+            padding: 12px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .tip {
+            color: #666666;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>就诊预约系统</h1>
+
+    <!-- 显示预约、取消预约后的结果 -->
+    <div class="message" th:if="${message}" th:text="${message}"></div>
+
+    <!-- 预约表单 -->
+    <div class="card">
+        <h2>预约专家号</h2>
+
+        <form th:action="@{/appointment/create}" method="post">
+
+            <div>
+                <label for="appointmentDate">就诊日期：</label>
+
+                <input type="date"
+                       id="appointmentDate"
+                       name="appointmentDate"
+                       th:value="${selectedAppointmentDate}"
+                       required>
+            </div>
+
+            <p class="tip">
+                可预约日期：
+                <span th:text="${tomorrow}"></span>
+                至
+                <span th:text="${houtian}"></span>
+            </p>
+
+            <div>
+                <label for="department">预约部门：</label>
+
+                <select id="department" name="department" required>
+                    <option value="">-- 请选择部门 --</option>
+
+                    <option th:each="departmentItem : ${departments}"
+                            th:value="${departmentItem}"
+                            th:text="${departmentItem}"
+                            th:selected="${departmentItem == selectedDepartment}">
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="createPhone">手机号码：</label>
+
+                <input type="text"
+                       id="createPhone"
+                       name="phone"
+                       maxlength="11"
+                       placeholder="请输入11位手机号码"
+                       th:value="${appointmentPhone}"
+                       required>
+            </div>
+
+            <button type="submit">提交预约</button>
+        </form>
+    </div>
+
+    <!-- 取消预约表单 -->
+    <div class="card">
+        <h2>取消预约</h2>
+
+        <form th:action="@{/appointment/cancel}" method="post">
+            <div>
+                <label for="cancelPhone">手机号码：</label>
+
+                <input type="text"
+                       id="cancelPhone"
+                       name="phone"
+                       maxlength="11"
+                       placeholder="请输入预约时的手机号码"
+                       th:value="${cancelPhone}"
+                       required>
+            </div>
+
+            <button type="submit">取消预约</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

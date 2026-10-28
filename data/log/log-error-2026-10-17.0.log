@@ -1,0 +1,7 @@
+26-10-17.21:11:19.121 [restartedMain   ] WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26-10-17.21:11:19.539 [restartedMain   ] WARN  UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9c40624b-a530-451b-9eb6-29bb387b13fb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+

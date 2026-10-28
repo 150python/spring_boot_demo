@@ -27,4 +27,15 @@
             where phone = #{phone}
         )
     </select>
+
+    <select id="findByPhone" resultMap="dataMap">
+        SELECT id, appointment_date, department, phone
+        from appointment_table
+        where phone = #{phone}
+    </select>
+
+    <delete id="deleteByPhone">
+        delete from appointment_table
+        where phone = #{phone}
+    </delete>
 </mapper>

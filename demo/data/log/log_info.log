@@ -1,0 +1,280 @@
+26-10-28.11:23:35.836 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 7852 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.11:23:35.839 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.11:23:35.892 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26-10-28.11:23:35.892 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26-10-28.11:23:36.724 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.11:23:36.727 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.11:23:36.757 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+26-10-28.11:23:37.401 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.11:23:37.415 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:37.416 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.11:23:37.416 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.11:23:37.470 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1576 ms
+26-10-28.11:23:38.721 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:38.745 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.11:23:38.756 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 3.608 seconds (process running for 4.478)
+26-10-28.11:23:47.617 [File Watcher    ] INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (0 additions, 22 deletions, 2 modifications)
+26-10-28.11:23:47.627 [Thread-1        ] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.11:23:47.629 [tomcat-shutdown ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:47.645 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.11:23:47.646 [Thread-1        ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:47.798 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 7852 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.11:23:47.798 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.11:23:47.930 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.11:23:47.930 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.11:23:47.932 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+26-10-28.11:23:47.951 [restartedMain   ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+26-10-28.11:23:47.991 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.11:23:47.992 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:47.992 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.11:23:47.992 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.11:23:48.027 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 227 ms
+26-10-28.11:23:48.102 [restartedMain   ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\java\SpringBootProject\demo\target\classes\mybatis\mapper\appointment_mapper.xml]'
+26-10-28.11:23:48.103 [restartedMain   ] INFO  StandardService        - Stopping service [Tomcat]
+26-10-28.11:23:48.112 [restartedMain   ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+26-10-28.11:23:48.129 [restartedMain   ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\java\SpringBootProject\demo\target\classes\mybatis\mapper\appointment_mapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\java\SpringBootProject\demo\target\classes\mybatis\mapper\appointment_mapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\java\SpringBootProject\demo\target\classes\mybatis\mapper\appointment_mapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:694)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:571)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:711)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\java\SpringBootProject\demo\target\classes\mybatis\mapper\appointment_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.demo.domain.po.Appointment'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.demo.domain.po.Appointment
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:98)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:692)
+	... 37 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.demo.domain.po.Appointment'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.demo.domain.po.Appointment
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:222)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:214)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:206)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.demo.domain.po.Appointment'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.demo.domain.po.Appointment
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.demo.domain.po.Appointment
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 45 common frames omitted
+26-10-28.11:23:50.607 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 7852 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.11:23:50.607 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.11:23:50.706 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.11:23:50.706 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.11:23:50.710 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+26-10-28.11:23:50.777 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.11:23:50.779 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:50.779 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.11:23:50.779 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.11:23:50.815 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 206 ms
+26-10-28.11:23:50.978 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.11:23:50.981 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.11:23:50.983 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 0.404 seconds (process running for 16.705)
+26-10-28.11:23:50.984 [restartedMain   ] INFO  ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+26-10-28.11:23:54.675 [http-nio-8081-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-10-28.11:23:54.676 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-10-28.11:23:54.677 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-10-28.11:24:39.219 [http-nio-8081-exec-5] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-28.11:24:39.533 [http-nio-8081-exec-5] INFO  HikariPool             - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d425826
+26-10-28.11:24:39.534 [http-nio-8081-exec-5] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-28.11:35:36.642 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.11:35:36.656 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.11:35:36.660 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-28.11:35:36.666 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-28.11:35:39.137 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 19620 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.11:35:39.139 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.11:35:39.173 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26-10-28.11:35:39.174 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26-10-28.11:35:39.619 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.11:35:39.621 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.11:35:39.641 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+26-10-28.11:35:40.032 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.11:35:40.047 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.11:35:40.049 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.11:35:40.049 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.11:35:40.102 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 927 ms
+26-10-28.11:35:40.942 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.11:35:40.960 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.11:35:40.966 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 2.284 seconds (process running for 2.953)
+26-10-28.11:35:44.709 [http-nio-8081-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-10-28.11:35:44.709 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-10-28.11:35:44.711 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-10-28.11:42:00.424 [http-nio-8081-exec-4] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-28.11:42:00.645 [http-nio-8081-exec-4] INFO  HikariPool             - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d78eba1
+26-10-28.11:42:00.646 [http-nio-8081-exec-4] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-28.12:03:08.158 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.12:03:08.172 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.12:03:08.183 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-28.12:03:08.187 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-28.12:03:10.170 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 20228 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.12:03:10.173 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.12:03:10.213 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26-10-28.12:03:10.213 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26-10-28.12:03:10.643 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.12:03:10.645 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.12:03:10.665 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+26-10-28.12:03:11.029 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.12:03:11.038 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:03:11.039 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.12:03:11.039 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.12:03:11.081 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 867 ms
+26-10-28.12:03:11.805 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.12:03:11.817 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.12:03:11.823 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 2.126 seconds (process running for 2.769)
+26-10-28.12:03:31.136 [http-nio-8081-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-10-28.12:03:31.137 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-10-28.12:03:31.138 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-10-28.12:03:39.198 [http-nio-8081-exec-2] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-28.12:03:39.416 [http-nio-8081-exec-2] INFO  HikariPool             - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@373f15ff
+26-10-28.12:03:39.417 [http-nio-8081-exec-2] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-28.12:39:16.477 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.12:39:16.491 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.12:39:16.504 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-28.12:39:16.506 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-28.12:39:18.727 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 17952 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.12:39:18.729 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.12:39:18.772 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26-10-28.12:39:18.772 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26-10-28.12:39:19.213 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.12:39:19.215 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.12:39:19.236 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+26-10-28.12:39:19.618 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.12:39:19.629 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:39:19.631 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.12:39:19.631 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.12:39:19.672 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 899 ms
+26-10-28.12:39:20.428 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.12:39:20.440 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.12:39:20.446 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 2.2 seconds (process running for 2.885)
+26-10-28.12:44:37.174 [File Watcher    ] INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+26-10-28.12:44:37.179 [Thread-1        ] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.12:44:37.180 [tomcat-shutdown ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:37.194 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.12:44:37.194 [Thread-1        ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:37.331 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 17952 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.12:44:37.331 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.12:44:37.443 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.12:44:37.444 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.12:44:37.447 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+26-10-28.12:44:37.504 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.12:44:37.504 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:37.505 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.12:44:37.505 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.12:44:37.531 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 197 ms
+26-10-28.12:44:37.659 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:37.663 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.12:44:37.666 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 0.375 seconds (process running for 320.105)
+26-10-28.12:44:37.667 [restartedMain   ] INFO  ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+26-10-28.12:44:39.087 [File Watcher    ] INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+26-10-28.12:44:39.089 [Thread-8        ] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.12:44:39.090 [tomcat-shutdown ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:39.104 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.12:44:39.104 [Thread-8        ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:39.191 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 17952 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.12:44:39.191 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.12:44:39.271 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.12:44:39.271 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.12:44:39.274 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+26-10-28.12:44:39.321 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.12:44:39.322 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:39.322 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.12:44:39.322 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.12:44:39.343 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 151 ms
+26-10-28.12:44:39.447 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.12:44:39.449 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.12:44:39.450 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 0.282 seconds (process running for 321.89)
+26-10-28.12:44:39.451 [restartedMain   ] INFO  ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+26-10-28.12:45:17.297 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.12:45:17.309 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.12:45:19.806 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 23368 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.12:45:19.809 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.12:45:19.846 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26-10-28.12:45:19.846 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26-10-28.12:45:20.273 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.12:45:20.275 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.12:45:20.291 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+26-10-28.12:45:20.693 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.12:45:20.709 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:45:20.712 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.12:45:20.713 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.12:45:20.772 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 926 ms
+26-10-28.12:45:21.523 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.12:45:21.536 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.12:45:21.541 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 2.214 seconds (process running for 2.857)
+26-10-28.12:45:51.277 [http-nio-8081-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-10-28.12:45:51.277 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-10-28.12:45:51.278 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-10-28.12:46:41.970 [http-nio-8081-exec-3] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-28.12:46:42.184 [http-nio-8081-exec-3] INFO  HikariPool             - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e37979f
+26-10-28.12:46:42.185 [http-nio-8081-exec-3] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-28.12:49:22.432 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-10-28.12:49:22.450 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-10-28.12:49:22.464 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-28.12:49:22.469 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-28.12:49:25.201 [restartedMain   ] INFO  DemoApplication        - Starting DemoApplication using Java 17.0.20.1 with PID 24156 (D:\java\SpringBootProject\demo\target\classes started by Administrator in D:\java\SpringBootProject\demo)
+26-10-28.12:49:25.203 [restartedMain   ] INFO  DemoApplication        - The following 1 profile is active: "dev"
+26-10-28.12:49:25.242 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26-10-28.12:49:25.242 [restartedMain   ] INFO  DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26-10-28.12:49:25.748 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-28.12:49:25.750 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-28.12:49:25.767 [restartedMain   ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+26-10-28.12:49:26.184 [restartedMain   ] INFO  TomcatWebServer        - Tomcat initialized with port 8081 (http)
+26-10-28.12:49:26.195 [restartedMain   ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8081"]
+26-10-28.12:49:26.196 [restartedMain   ] INFO  StandardService        - Starting service [Tomcat]
+26-10-28.12:49:26.196 [restartedMain   ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/11.0.24]
+26-10-28.12:49:26.240 [restartedMain   ] INFO  WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 997 ms
+26-10-28.12:49:27.027 [restartedMain   ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8081"]
+26-10-28.12:49:27.041 [restartedMain   ] INFO  TomcatWebServer        - Tomcat started on port 8081 (http) with context path '/'
+26-10-28.12:49:27.047 [restartedMain   ] INFO  DemoApplication        - Started DemoApplication in 2.368 seconds (process running for 3.363)
+26-10-28.12:49:29.508 [http-nio-8081-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-10-28.12:49:29.509 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-10-28.12:49:29.510 [http-nio-8081-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-10-28.12:49:38.245 [http-nio-8081-exec-2] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-28.12:49:38.444 [http-nio-8081-exec-2] INFO  HikariPool             - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b6e80e3
+26-10-28.12:49:38.445 [http-nio-8081-exec-2] INFO  HikariDataSource       - HikariPool-1 - Start completed.
